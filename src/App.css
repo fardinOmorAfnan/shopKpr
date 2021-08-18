@@ -1,38 +1,230 @@
-.App {
+.App{
+  box-sizing: border-box;
+}
+.ancor{
+  text-decoration:none;
+  color:#000;
+  transition:.8s;
+}
+
+.bg-nav{
+  background-color: #EBFBFB;
+  /* background-color: #000; */
+}
+
+.navbar .ancor:hover{
+  text-decoration:underline;
+}
+
+.footer{
+  background-color: #000;
+  color: #fff;
+}
+
+.stayWith{
+  margin: .5rem 0;
+}
+
+.shopKpr{
+  margin: .5rem 0;
+}
+
+.contact-us{
+  margin: .5rem 0;
+}
+
+.footer-card{
+  background-color: rgb(44, 43, 43);
+  padding: 2rem;
+  width: 20rem;
+}
+.color-orange{
+  color:orange;
+}
+.color-dip-orange{
+  color:rgb(255, 102, 0);
+}
+.footer-icon{
+  color:orange;
+}
+.footer h6{
+  color: rgba(247, 245, 245, 0.275);
+}
+.card-icon-div{
+  width:50%;
+  display:flex;
+  justify-content: space-between;
+  color: rgb(194, 189, 189);
+}
+.rights{
+  height: 7rem;
+   background-color: rgba(29, 28, 28, 0.967);
+    color: rgba(247, 245, 245, 0.275);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+
+/* home */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  min-height: 600px;
+  
+  background-color:rgb(233, 253, 250);
+  perspective: 1000px; /*Remove this if you don't want the 3D effect*/
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+ padding:2rem;
+ text-align:left;
+}
+
+/* Style the back side */
+.flip-card-back {
+ padding:2rem;
+  transform: rotateY(180deg);
+  text-align:left;
+}
+
+.banner-image img{
+  height:20rem;
+  width: 20rem;
+}
+.flip-card span,.shopKpr-cards span{
+  color:rgb(0, 80, 0);
+}
+.btn-banner,.btn-vision{
+  background-color:rgb(0, 80, 0);
+  color:#fff;
+}
+
+
+/* Retailer */
+
+.retailer{
+  height:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.content-item2{
+  display:flex;
+  justify-content:center;
   align-items: center;
+}
+
+
+.content-item2 h1{
+  border-bottom: 1px solid red;
+}
+
+
+
+/* what is shopKpr */
+.what_is_shopKpr .banner{
+  margin-bottom: 1rem;
+} 
+.what-is-shopKpr .img{
+ height:30rem;
+ width: 45rem;
+ /* background-color: #000; */
+  
+}
+.what-is-shopKpr .img img{
+  /* background: red; */
+  height: 100%;
+  width: 100%;
+  border-radius:2rem;
+}
+
+/* vision   */
+.vision .banner .img{
+ height:30rem;
+ width: 45rem;
+ /* background-color: #000; */
+  
+}
+.vision .banner .img img{
+  /* background: red; */
+  height: 100%;
+  width: 100%;
+  border-radius:2rem;
+}
+
+.vision .content{
+  display:flex;
+  flex-direction:column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* services */
+.services .card i{
+  font-size:3rem;
+  color:#5df3f3;
+}
+.services{
+  background-color:#EAFCFB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.retaler-insight .img{
+ height:30rem;
+ width: 40rem;
+ margin-bottom:1rem;
+ /* background-color: #000; */
+  
+}
+.retaler-insight .img img{
+  /* background: red; */
+  height: 100%;
+  width: 100%;
+
+}
+
+.retaler-insight .img2{
+  height:8rem;
+  width: 8rem;
+  margin: 0 auto;
+  
+}
+.retaler-insight .img2 img{
+  /* background: red; */
+  height: 100%;
+  width: 100%;
+
 }
